@@ -1,14 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-                                                   xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+                                                   xmlns:tools="http://schemas.android.com/tools" android:layout_width="wrap_content"
                                                    android:layout_height="wrap_content"
                                                    xmlns:app="http://schemas.android.com/apk/res-auto">
     <TextView
             android:id="@+id/studentName"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintStart_toEndOf="@id/studentPicture"
             app:layout_constraintTop_toTopOf="parent"
+            android:paddingTop="20dp"
             android:paddingStart="16dp"
             android:text="@string/student_name"
             tools:ignore="RtlSymmetry"/>
@@ -16,9 +17,18 @@
             android:id="@+id/studentId"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintStart_toEndOf="@id/studentPicture"
             app:layout_constraintTop_toBottomOf="@id/studentName"
-            android:paddingStart="32dp"
-            tools:text="Student ID: HUST2021"
+            android:paddingTop="15dp"
+            android:paddingStart="16dp"
+            android:paddingBottom="15dp"
+            tools:text="Student ID: HUST0000"
             tools:ignore="RtlSymmetry"/>
+    <ImageView
+            android:id="@+id/studentPicture"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:src="@drawable/my_image"/>
 </androidx.constraintlayout.widget.ConstraintLayout>
