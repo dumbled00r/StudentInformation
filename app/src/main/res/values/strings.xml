@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Student Info Displayer</string>
+    <string name="student_name">Student Name</string>
+    <string name="student_id_123">Student ID: %s</string>
+</resources>
